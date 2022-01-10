@@ -1,0 +1,199 @@
+/* Search  */
+.img{
+    width: 95%;
+    height: 80vh;
+    background-image: url(wall.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.search{
+    width: 600px;
+    margin: auto;
+    height: 50px;
+    border-radius: 40px;
+    padding-left: 30px;
+
+}
+.text{
+    font-size: 70px;
+    text-align: center;
+    color: white;
+}
+/* Navbar */
+.navbar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+.left{
+    width: 80%;
+    height: 100%;
+    padding-left: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.shop{
+    font-size: 15px;
+    border-radius: 15px;
+    background-color: transparent;
+    margin-left: 120px;
+    margin-top: 23px;
+    padding: 8px;
+}
+.shop:hover{
+    background-color: black;
+    color: white;
+}
+/* Note  */
+.box{
+    background-color: rgb(24, 22, 22);
+    height: 80px;
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    border-radius: 10px;
+    background-color: rgb(255,243,128);
+}
+.note{
+   width: 80%;
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 20px;
+   color: black;
+   background-color: rgb(255,243,128);
+}
+.learn{
+    font-size: 18px;
+    background-color: transparent;
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-left: 60px;
+    color: black;
+    cursor: pointer;
+    background-color: rgb(255,243,128);
+}
+/* List  */
+.all{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+}
+.con{
+    width: 75%;
+    height: 100%;
+}
+.con1{
+    width: 24%;
+    height: 100%;
+}
+.point{
+    height: 420px;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+}
+.point>div{
+    height: 100%;
+    width: 33%;
+    margin-left: 20px;
+}
+.line{
+    height: 5px;
+    width: 40px;
+    background-color: black;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.line~p{
+    text-decoration: underline;
+    font-size: 21px;
+    padding-left: 10px;
+}
+.line~h1{
+    padding-left: 10px;
+}
+.mrg{
+    margin-top: 80px
+}
+/* 3 options */
+.con1>div{
+    background-color: black;
+    width: 270px;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: white;
+    margin-left: 30px;
+    display: flex;
+    cursor: pointer;
+}
+.fas{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.con1>div>h3{
+    padding-left: 10px;
+}
+/* About   */
+.about{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(228, 222, 222);
+    margin-top: 100px;
+    display: flex;
+}
+#left{
+    width: 69%;
+    height: 100%;
+    margin-left: 10px;
+}
+#right{
+    width: 30%;
+    height: 100%;
+}
+h1{
+    font-family: sans-serif;
+    cursor: pointer;
+}
+p{
+    font-family: "Gotham 4r", Helvetica, Arial, sans-serif;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.fab{
+    font-size: 25px;
+    margin-top: 60px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+/* fixed ask button  */
+.fixbutton{
+    position: fixed;
+    width: 120px;
+    height: 50px;
+    background-color: black;
+    bottom: 5%;
+    right: 3%;
+    border-radius: 10%;
+    text-align: center;
+    display: flex;
+}
+.fixbutton>p{
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 5%;
+}
+.fixbutton>.fas {
+    color: white;
+    padding-top: 18px;
+    font-size: 20px;
+    padding-left: 20px;
+}

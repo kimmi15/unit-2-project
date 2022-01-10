@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/kohl's fav icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="fot.css">
+    <script src="https://kit.fontawesome.com/683b4b40e3.js" crossorigin="anonymous"></script>
+    <title>Kohl's | Shop Clothing ,Shoes,Home,Kitchen,Bedding,Toys & More</title>
+</head>
+<body>
+<div class="container">
+    <!-- ad section -->
+    <div class="ads">
+        <p class="adContent"><b>Free shipping</b> with 25% purchase. <span><a href="#">details</a></span> <b>Fast+Free</b> store pickup! <span><a href="#">details</a> <b>Take an extra</b> 30%, 20% or 15% off when you use a kohl's Card. <span><a href="#">details</a></span></span></p>
+    </div>
+
+    <!-- navbar -->
+    <div class="nav">
+        <div class="brand"><a href="#"><img src="assets/logo.jpg" alt="KOHL'S" style="width: 150px; height: 30px;"></a></div>
+        <div class="search">
+            <form id="form">
+                <button><i class="fas fa-search fa-2x"></i></button><input type="text" placeholder="What are you looking for today?" id="searchbox">
+              </form>
+        </div>
+        <div class="account"><a href="#"><img src="/assets/user.png"  onclick="accountDrop()" alt="" style="width: 35px; height: 35px;"></a> <p>Account</p>
+            <div id="dropdown">
+                <div class="dropdownone">
+                    <button onclick="signIn()">SIGN IN</button>
+                    <a href="">Create Account</a>
+                </div>
+            <div class="dropdowntwo color"><i class="fas fa-info-circle"></i><span>Find your offers & Kohl's cash in your <a href="">wallet</a></span></div>
+            <div class="dropdowntwo"><i class="fas fa-wallet"></i><h3>Wallet</h3> </div>
+            <div class="dropdowntwo"><i class="fas fa-wallet"></i><img src="" alt=""> <h3>Reward</h3> </div>
+            <div class="dropdowntwo"><i class="fas fa-wallet"></i><img src="" alt=""> <h3>MY Kohl's Card</h3></div>
+            </div>
+        </div>
+        <div class="cart"><a href="#"><img src="/assets/shopping-cart.png" alt="" style="width: 35px; height: 35px;"></a> <p>$0.00</p></div>
+        <div class="checkout"><a href="#"><img src="/assets/right.png" alt="" style="width: 35px; height: 35px;"></a><p>Check Out</p></div>
+    </div>
+
+
+<!-- menu and help section -->
+    <div class="secnav">
+        <div class="shop">
+            <i class="fa fa-bars" onclick="showSideBar()"><span> Shop By Department</span></i>
+            <ul class="mainmenu" type="none">
+                <li><a href="#">Shop My Store</a></li>
+                <li><a href="#">Holiday Deals</a></li>
+                <li><a href="#">Holiday Gift Shop</a></li>
+                <li><a href="#">From the home</a></li>
+                <li><a href="womenProduct.html">Women</a></li>
+                <li><a href="womenProduct.html">Women's Plus Size</a></li>
+                <li><a href="#">Juniors</a></li>
+                <li><a href="products.html">Men</a></li>
+                <li><a href="products.html">Men's Big & Tall</a></li>
+                <li><a href="#">Shoe</a></li>
+                <li><a href="#">Toys</a></li>
+                <li><a href="kid.html">Kids</a></li>
+                <li><a href="#">Baby</a></li>
+                <li><a href="#">Bed & Bath</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Jewelry & Accessories</a></li>
+                <li><a href="#">Beauty | SHEFORA</a></li>
+                <li><a href="#">Active & Fitness</a></li>
+                <li><a href="#">Health & Personal care</a></li>
+                <li><a href="#">Sports Fan</a></li>
+                <li><a href="#">Diversity, Inclusion & Beloning</a></li>
+                <li><a href="#">Clearance</a></li>
+            </ul>
+        </div>
+        <div class="selectstore">
+            <i class="fas fa-star"></i><span class="fas">My Store : Select Store</span>
+        </div>
+        <div class="coupon"><i class="fas fa-dollar-sign"></i><span style="font-size: 17px; font-weight:bold;">Kohl’s Coupons</span></div>
+        <div class="help"><i class="far fa-question-circle"></i><span style="font-size: 17px;font-weight:bold;">Help</span></div>
+    </div>
+
+
+</body>
+</html>
+
+<script src="sidebar.js"></script>

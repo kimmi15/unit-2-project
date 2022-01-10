@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<h>welcome to heading>, initial-scale=1.0">
+      <link rel="shortcut icon" href="/assets/kohl's fav icon.png" type="image/x-icon">
+      <link rel="stylesheet" href="home.css">
+      <link rel="stylesheet" href="fot.css">
+      <script src="https://kit.fontawesome.com/683b4b40e3.js" crossorigin="anonymous"></script>
+      <title>Kohl's | Shop Clothing ,Shoes,Home,Kitchen,Bedding,Toys & More</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <script src="https://kit.fontawesome.com/cb6e07c0b2.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="createaccount.css">
+ 
+</head>
+<body>
+    <div class="nav">
+        <div class="brand"><a href="home.html"><img src="assets/logo.jpg" alt="KOHL'S" style="width: 150px; height: 30px;"></a></div>
+        <div class="search">
+            <form id="form">
+                <button><i class="fas fa-search fa-2x"></i></button><input type="text" placeholder="What are you looking for today?" id="searchbox">
+              </form>
+        </div>
+        <div class="account"><a href=""><img src="/assets/user.png"  onclick="accountDrop()" alt="" style="width: 35px; height: 35px;"></a> <p>Account</p>
+            <div id="dropdown">
+                <div class="dropdownone">
+                    <button>SIGN IN</button>
+                    <a href="createaccount.html">Create Account</a>
+                </div>
+            <div class="dropdowntwo color"><i class="fas fa-info-circle"></i><span>Find your offers & Kohl's cash in your <a href="">wallet</a></span></div>
+            <div class="dropdowntwo"><i class="fas fa-wallet"></i><h3>Wallet</h3> </div>
+            <div class="dropdowntwo"><i class="fas fa-wallet"></i><img src="" alt=""> <h3>Reward</h3> </div>
+            <div class="dropdowntwo"><i class="fas fa-wallet"></i><img src="" alt=""> <h3>MY Kohl's Card</h3></div>
+            </div>
+        </div>
+        <div class="cart"><a href="cart.html"><img src="/assets/shopping-cart.png" alt="" style="width: 35px; height: 35px;"></a> <p>$0.00</p></div>
+        <div class="checkout"><a href="payment.html"><img src="/assets/right.png" alt="" style="width: 35px; height: 35px;"></a><p>Check Out</p></div>
+    </div>
+
+
+<!-- menu and help section -->
+    <div class="secnav">
+        <div class="shop">
+            <i class="fa fa-bars" onclick="showSideBar()"><span> Shop By Department</span></i>
+            <ul class="mainmenu" type="none">
+                <li><a href="#">Shop My Store</a></li>
+                <li><a href="#">Holiday Deals</a></li>
+                <li><a href="#">Holiday Gift Shop</a></li>
+                <li><a href="#">From the home</a></li>
+                <li><a href="womenProduct.html">Women</a></li>
+                <li><a href="womenProduct.html">Women's Plus Size</a></li>
+                <li><a href="#">Juniors</a></li>
+                <li><a href="products.html">Men</a></li>
+                <li><a href="products.html">Men's Big & Tall</a></li>
+                <li><a href="#">Shoe</a></li>
+                <li><a href="#">Toys</a></li>
+                <li><a href="kid.html">Kids</a></li>
+                <li><a href="#">Baby</a></li>
+                <li><a href="#">Bed & Bath</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Jewelry & Accessories</a></li>
+                <li><a href="#">Beauty | SHEFORA</a></li>
+                <li><a href="#">Active & Fitness</a></li>
+            </ul>
+        </div>
+        <div class="selectstore">
+            <i class="fas fa-star"></i><span class="fas">My Store : Select Store</span>
+        </div>
+        <div class="coupon"><i class="fas fa-dollar-sign"></i><span style="font-size: 17px; font-weight:bold;">Kohl’s Coupons</span></div>
+        <div class="help"><i class="far fa-question-circle"></i><span style="font-size: 17px;font-weight:bold;">Help</span></div>
+    </div>
+
+    <div id="container">
+       <h2>Create Account</h2>
+       <p>By creating a account, you agree to Kohl's Security & Privacy Policy and Legal Notices.</p>
+       <form id="form1" action="">
+           <div class="n1">
+               <div>
+           <label class="font" for="" >First Name</label><br>
+           <input style="width: 250px;
+           height: 30px;
+           border: 1px solid black;" id="first1" class="name1" type="text" placeholder="Enter first Name"/>
+        </div>
+        <div class="n2">
+            <label class="font" for="">Last Name</label><br>
+            <input style="width: 250px;
+            height: 30px;
+            border: 1px solid black;" id="last1" class="name1" type="text" placeholder="Enter Last Name"/>
+            
+        </div>
+        </div>
+        <div class="n1">
+            <div>
+        <label class="font" for="" >Email Address</label><br>
+        <input id="email1" class="name1" type="text" placeholder="name@mail.com" style="width:250px; height: 30px; border: 1px solid black;"/>
+     </div>
+     <div class="n2">
+         <label class="font" for="">Password</label><br>
+         <input  id="pass1" class="name1" type="password" placeholder="Should not be same as email or login"/>
+         
+     </div>
+    <div>
+    </div>
+</div>
+<input style="margin-top: 30px;" type="checkbox">Keep me sign in</input>
+<br>Check this box to stay signed in on this device.</br>Recommended for devices that only you use.</p>
+
+<hr></hr>
+
+    <h1 class="kohl">KOHL'S Rewards*
+        <a id="a" href=""><i class="fas fa-question"></i></a>
+    </h1>
+    
+
+    
+    <input id="crcl1" class="crcl" type="radio" name = "signup"> I signed up in store 
+    <input id="crcl2"  class="crcl" type="radio" name = "signup"> Enroll Today!
+    <input id="crcl3" class="crcl" type="radio" name = "signup"> No Thanks. <br><br>
+
+    <div id="signstore" class="cl1">
+       
+    
+            <label for="">Reward ID</label><br>
+            <input type="text" style=" width: 250px;
+            height: 30px;
+            border: 1px solid black;" placeholder="11-digits rewards ID"><br><br>
+            <label for="">Birthday</label><br>
+            <div>
+                <select name="Month" id="month">
+                    <option value="month">Month</option>
+                    <option value="jan">January</option>
+                    <option value="feb">Feburary</option>
+                    <option value="mar">March</option>
+                    <option value="apr">April</option>
+                    <option value="may">May</option>
+                    <option value="jun">June</option>
+                    <option value="july">July</option>
+                    <option value="aug">August</option>
+                    <option value="sept">September</option>
+                    <option value="oct">October</option>
+                    <option value="nov">November</option>
+                    <option value="dec">December</option>
+                </select>
+                <select name="day" id="day">
+                    <option value="day">Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select name="year" id="year">
+                    <option value="year">year</option>
+                    <option value="">1991</option>
+                    <option value="">1992</option>
+                    <option value="">1993</option>
+                    <option value="">1994</option>
+                    <option value="">1995</option>
+                    <option value="">1996</option>
+                    <option value="">1997</option>
+                    <option value="">1998</option>
+                    <option value="">1999</option>
+                    <option value="">2000</option>
+                    <option value="">2001</option>
+                    <option value="">2002</option>
+                    <option value="">2003</option>
+                    <option value="">2004</option>
+                    <option value="">2005</option>
+                    <option value="">2006</option>
+                    <option value="">2007</option>
+                    <option value="">2008</option>
+                    <option value="">2009</option>
+                    <option value="">2010</option>
+                    <option value="">2011</option>
+                    <option value="">2012</option>
+                    <option value="">2013</option>
+                    <option value="">2014</option>
+                    <option value="">2015</option>
+                    <option value="">2016</option>
+                    <option value="">2017</option>
+                    <option value="">2018</option>
+                    <option value="">2019</option>
+                    <option value="">2020</option>
+                </select>
+                <p style="font-weight: 400;">By enrolling in Kohl's Rewards, you agree to the terms and conditions of the program and certify that you are over 16 years old and a US resident.</p>
+            </div>
+
+    </div>
+    <div id="enroll">
+       
+    
+            <label for="">Phone Number</label><br>
+            <select name="mob" id="">
+                <option value="mobile">Mobile</option>
+                <option value="home">Home</option>
+                <input  type="number" placeholder="555-555-5555"/><br><br>
+                <label for="">Birthday</label><br>
+            <!-- <di v> -->
+                <select name="Month" id="month">
+                    <option value="month">Month</option>
+                    <option value="jan">January</option>
+                    <option value="feb">Feburary</option>
+                    <option value="mar">March</option>
+                    <option value="apr">April</option>
+                    <option value="may">May</option>
+                    <option value="jun">June</option>
+                    <option value="july">July</option>
+                    <option value="aug">August</option>
+                    <option value="sept">September</option>
+                    <option value="oct">October</option>
+                    <option value="nov">November</option>
+                    <option value="dec">December</option>
+                </select>
+                <select name="day" id="day">
+                    <option value="day">Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select name="year" id="year">
+                    <option value="year">year</option>
+                    <option value="">1991</option>
+                    <option value="">1992</option>
+                    <option value="">1993</option>
+                    <option value="">1994</option>
+                    <option value="">1995</option>
+                    <option value="">1996</option>
+                    <option value="">1997</option>
+                    <option value="">1998</option>
+                    <option value="">1999</option>
+                    <option value="">2000</option>
+                    <option value="">2001</option>
+                    <option value="">2002</option>
+                    <option value="">2003</option>
+                    <option value="">2004</option>
+                    <option value="">2005</option>
+                    <option value="">2006</option>
+                    <option value="">2007</option>
+                    <option value="">2008</option>
+                    <option value="">2009</option>
+                    <option value="">2010</option>
+                    <option value="">2011</option>
+                    <option value="">2012</option>
+                    <option value="">2013</option>
+                    <option value="">2014</option>
+                    <option value="">2015</option>
+                    <option value="">2016</option>
+                    <option value="">2017</option>
+                    <option value="">2018</option>
+                    <option value="">2019</option>
+                    <option value="">2020</option>
+            </select><br><br>
+            <div style="display: flex;width: 300px;height: 50px; border: 0.5px solid black;">
+                <input type="checkbox">i'm not a robot
+            
+            </div>
+            <p style="font-weight: 400;">
+                By enrolling in Kohl's Rewards, you agree to the terms and conditions of the program and certify that you are over 16 years old and a US resident.</p>
+        
+        <hr></hr>
+    </div>
+    <hr></hr>
+    <div>
+    <h2 id="head">Stay in the loop + save 15% on your next purchase.</h2>
+    <div id="xyz">
+    <input type="checkbox" name="" id="" style="width: 30px;height: 30px;">
+    <p style="font-weight: 400;">
+        Yes, sign me up for emails that deliver our best deals and the newest styles, including all the tips & tricks to make shopping even easier.
+
+US Residents Only. Terms apply;<a href = "sales.html" class="sales">see details.</a> Privacy Policy.
+    </p>
+</div>
+   <div id="abc">
+<input type="submit" id="button" value="CREATE ACCOUNT"></input><br><br>
+</form>
+<a href="signinkohls.html" class="signin"> <p id="cancel">Cancel</p></a>
+</div>     
+</div>
+       
+    </div>
+    <div class="footermain">
+        <div class="footertop">
+   
+   
+         <div class="subbox1">
+           <div>
+           <p id="footertxt"><b>CONNECT WITH US</b></p>
+           </div>
+           <div>
+           <p id="footertxt"><a href="https://www.facebook.com/kohls"><i class="fab fa-facebook-f fa-2x"></i></a></p>  
+           </div>
+           <div>
+             <p id="footertxt"><a href="https://twitter.com/kohls"><i class="fab fa-twitter fa-2x"></i></a></p>
+           </div>
+           <div>
+             <p id="footertxt"><a href="https://www.pinterest.com/kohls/"><i class="fab fa-pinterest-p fa-2x"></i></a></p>
+           </div>
+           <div>
+             <p id="footertxt"><a href="https://www.instagram.com/kohls"><i class="fab fa-instagram fa-2x"></i></a></p>
+           </div>
+           <div>
+             <p id="footertxt"><a href=""><i class="fab fa-youtube fa-2x"></i></a></p>
+           </div>
+         </div>
+   
+   
+         <div class="subbox2">
+           <div id="get">
+           <p id="footertxt"><b>GET OUR APP</b></p>
+           </div>
+            <div id="bar">
+             <img src="https://tse4.mm.bing.net/th?id=OIP.ZdIR9G0iFvIqrc1wLXDG4AHaHa&pid=Api&P=0&w=300&h=300" height="100px"/>
+            </div>
+            <div id="learn">
+           <p id="footertxt"><b>Scan the code to download
+             the Kohl’s App today.</b></p>
+            <a href="https://www.kohls.com/feature/app.jsp"><button id="infosi">Learn More</button></a> 
+            </div>
+         </div>
+   
+       </div>
+   
+         <div id="footerbottom">
+         <div>
+         <p id="footertxt"><b>CUSTOMER SERVICE</b></p>
+         <p id="footertxt">Contact Us</p>
+         <p id="footertxt">Shipping</p>
+         <p id="footertxt">Returns</p>
+         <p id="footertxt">Rebates</p>
+         <p id="footertxt">Recalls</p>
+         <p id="footertxt">Product Guides</p>
+         <p id="footertxt"> Kohl’s Cash</p>
+         </div>
+         <div>
+           <p id="footertxt"><b>SHOP KOHL’S</b></p>
+           <p id="footertxt">Get 15% off when you
+             sign up for our emails</p>
+           <p id="footertxt">My Lists</p>
+           <p id="footertxt">Site Map</p>
+           <p id="footertxt">Store Locator</p>
+           <p id="footertxt">Gift Cards</p>
+           <p id="footertxt">Kohl’s Coupons</p>
+   
+         </div>
+         <div>
+           <p id="footertxt"><b>MY ACCOUNT</b></p>
+           <p id="footertxt">Sign In</p>
+           <p id="footertxt">My Account</p>
+           <p id="footertxt">Update Password</p>
+           <p id="footertxt">Order Status</p>
+           <p id="footertxt">Rewards</p>
+           <p id="footertxt">Gift Card Balance &
+             Kohl’s Cash Balance</p>
+   
+         </div>
+         <div>
+           <p id="footertxt"><b>KOHL’S CARD</b></p>
+           <p id="footertxt">Benefits</p>
+           <p id="footertxt">Pay & Manage Card</p>
+           <p id="footertxt">Apply for a Kohl’s Card</p>
+           <p id="footertxt">See if you prequalify</p>
+   
+         </div>
+         <div>
+           <p id="footertxt"><b>ABOUT KOHL’S</b></p>
+           <p id="footertxt">Our Websites</p>
+           <p id="footertxt">Community</p>
+           <p id="footertxt">Diversity & Inclusion</p>
+           <p id="footertxt">Sustainability</p>
+           <p id="footertxt">Careers</p>
+           <p id="footertxt">Apply for Seasonal Jobs</p>
+           <p id="footertxt">Associate Services</p>
+           <p id="footertxt">Investor Relations</p>
+           <p id="footertxt">Affiliate Program</p>
+           <p id="footertxt">Advertise with Us</p>
+         </div>
+         </div>  
+         </div>
+         <div class="foot">
+         <p id="footertxt">© 2021 Kohl’s, Inc.<br>
+           KOHL’S® and Kohl’s brand names are trademarks owned by KIN, Inc.<br>
+           All rights reserved.</p>
+         <p id="footertxt">Android, Google Play and the Google Play logo are trademarks of Google Inc. App Store is a service mark of Apple Inc.<br>
+         <u><b>Legal Notices, Privacy Policy, California Privacy Policy, CA-Do Not Sell My Personal Information, About Our Ads, California Transparency in Supply Chains Act.</u></b></p>
+         </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function(){
+    $("#crcl1").on('click', function(){
+        $("#signstore").toggle(2000)
+
+    })
+    $("#crcl2").on('click', function(){
+        $("#enroll").toggle(2000)
+
+    })
+    $("#crcl3").on('click', function(){
+        $("#signstore").hide()
+        $("#enroll").hide()
+
+    })
+
+})
+document.querySelector("#form1").addEventListener("submit",additem)
+var prod = JSON.parse(localStorage.getItem("shoppingitem")) || []
+function additem(event){
+    event.preventDefault();
+    var name = document.querySelector("#first1").value;
+    var last = document.querySelector("#last1").value;
+    var email = document.querySelector("#email1").value;
+    var pass = document.querySelector("#pass1").value;
+    var prodobj = {
+        name: name,
+        last: last,
+        email: email,
+        pass: pass
+    }
+    prod.push(prodobj);
+    console.log(prod)
+    localStorage.setItem("shoppingitem", JSON.stringify(prod));
+}
+document.querySelector("#form1").addEventListener("submit",function(){
+    window.location.href = "signinkohls.html"
+})
+function showSideBar() {
+      var show = document.querySelector(".mainmenu");
+      if (show.style.display === "block") {
+        show.style.display = "none";
+      } else {
+        show.style.display = "block";
+      }
+    }
+
+
+
+ function accountDrop() {
+   var show = document.querySelector("#dropdown");
+   if(show.style.display == "block"){
+     show.style.display = "none";
+   }
+   else {
+     show.style.display = "block"
+   }
+ }
+    </script>
+  
+
+
+</body>
+</html>
+

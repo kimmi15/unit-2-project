@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cb6e07c0b2.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/assets/kohl's fav icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="fot.css">
+    <script src="https://kit.fontawesome.com/683b4b40e3.js" crossorigin="anonymous"></script>
+    <title>Account</title>
+    <style>
+        .container{
+            width: 250px;
+            border: 1px  black;
+            margin-left: 400px;
+            margin-top: 80px;
+        }
+        .container2{
+            width: 250px;
+
+        }
+        .text{
+            width: 220px;
+            height: 30px;
+            margin-top: 2px;
+        }
+        #check{
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            
+            
+        }
+        #box{
+            display: flex;
+            font-size: 10px;
+        }
+        #keep{
+            margin-top: 7px;
+            margin-left: 10px;
+            color: black;
+        }
+        .button{
+            width: 220px;
+            height: 35px;
+            background-color: #95c96f;
+            color: white;
+        }
+        #vl{
+            border-left: 1px solid black;
+            height: 450px;
+            position: absolute;
+            left: 45%;
+            margin-left: -3px;
+            top: 180px;
+        }
+        #img{
+            margin-top: 15px;
+        }
+        .tx{
+            margin-top: 18px;
+        }
+        .ab{
+            margin-top: 200px;
+        }
+        .right{
+            position: absolute;
+            left: 52%;
+            margin-top: 80px;
+            top: 80px;
+        }
+        .font{
+            font-size: 15px;
+        }
+        #rt{
+            display: flex;
+            font-size: 20px;
+        }
+        #rt>h5{
+           
+            margin-left: 20px;
+            margin-top: -1px;
+        }
+        .nav{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    background-color: white;
+}
+
+.brand{
+    font-family: helvetica, arial, sans-serif;
+    margin: 10px 25px;
+    height: 40px;
+    width: 150px;
+}
+.search{
+    width: 490px;
+    height: 40px;
+    margin: 10px 30px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+input[type = text] {
+    padding: 1px;
+    font-size: 20px;
+    border: none;
+    width: 430px;
+    height: 35px;
+}
+button{
+    width: 50px;
+    height: 35px;
+    border: none;
+    background-color: white;
+}
+.account{
+    float: left;
+    margin: auto;
+    margin-right: 50px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+#dropdown{
+    display: none;
+    width: 300px;
+    height: 350px;
+    background-color: rgb(238,238,238);
+    position: absolute;
+}
+.dropdownone{
+    display: flex;
+}
+.dropdownone > button{
+    width: 100px;
+    background-color: black;
+    color: white;
+    margin: 20px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.dropdownone > a{
+    font-size: 16px;
+    font-family:"Gotham 5r", Helvetica, Arial, sans-serif;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.dropdowntwo{
+    width: 270px;
+    height: 50px;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-family:"Gotham 5r", Helvetica, Arial, sans-serif ;
+    display: flex;
+}
+.dropdowntwo > .fas,span,a{
+    font-size: 16px;
+    margin: 5px 5px;
+}
+.dropdowntwo > h3{
+    margin-top: 15px;
+    font-weight: normal;
+}
+.dropdowntwo > .fa-wallet{
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.color{
+    background-color: rgb(220,238,240);
+}
+.cart{
+    float: left;
+    margin-top: 5px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+}
+.checkout{
+    float: left;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+p{
+    margin: 0px 0px ;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Gotham 5r", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+img{
+    margin-left: 10px;
+}
+
+/* menu & help section */
+.secnav{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid gray;
+    display: flex;
+}
+.shop{
+    border-right:1px solid gray;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+}
+.fa{
+    margin-left: 33px;
+    margin-top: 10px;
+}
+.fa > span{
+    font-weight: bold;
+    font-family: "Gotham 5r", Helvetica, Arial, sans-serif;
+}
+.mainmenu{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 200px;
+    display: none;
+    background-color: white;
+    position: relative;
+}
+.mainmenu li a{
+   font-family:"Gotham 5r", Helvetica, Arial, sans-serif;
+   display: block;
+   text-decoration: none;
+   font-size: 16px;
+   padding: 10px 0px;
+   font-weight:600; 
+   position: relative;
+   background-color: white
+}
+
+.selectstore{
+    height: 100%;
+    width: 230px;
+    font-size: 18px;
+}
+.selectstore > .fas{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.selectstore > span{
+    font-family: "Gotham 5r", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.coupon{
+    float: right;
+    margin: auto;
+    margin-right: 50px;
+}
+.coupon > span{
+    font-family: "Gotham 5r", Helvetica, Arial, sans-serif;
+}
+.coupon > .fas{
+    margin-right: 10px;
+}
+.help{
+    float: right;
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-left: 0px;
+}
+.help > span{
+    font-family: "Gotham 5r", Helvetica, Arial, sans-serif;
+}
+.help > .far{
+    margin-right: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="brand"><a href="home.html"><img src="assets/logo.jpg" alt="KOHL'S" style="width: 150px; height: 30px;"></a></div>
+        <div class="search">
+            <form id="form">
+                <button><i class="fas fa-search fa-2x"></i></button><input type="text" placeholder="What are you looking for today?" id="searchbox">
+              </form>
+        </div>
+        <div class="account"><a href="#"><img src="/assets/user.png"  onclick="accountDrop()" alt="" style="width: 35px; height: 35px;"></a> <p>Account</p>
+            <div id="dropdown">
+                <div class="dropdownone">
+                    <button>SIGN IN</button>
+                    <a href="createaccount.html">Create Account</a>
+                </div>
+            <div class="dropdowntwo color"><i class="fas fa-info-circle"></i><span>Find your offers & Kohl's cash in your <a href="">wallet</a></span></div>
+            <div class="dropdowntwo"><i class="fas fa-wallet"></i><h3>Wallet</h3> </div>
+            <div class="dropdowntwo"><i class="fas fa-wallet"></i><img src="" alt=""> <h3>Reward</h3> </div>
+            <div class="dropdowntwo"><i class="fas fa-wallet"></i><img src="" alt=""> <h3>MY Kohl's Card</h3></div>
+            </div>
+        </div>
+        <div class="cart"><a href="#"><img src="/assets/shopping-cart.png" alt="" style="width: 35px; height: 35px;"></a> <p>$0.00</p></div>
+        <div class="checkout"><a href="#"><img src="/assets/right.png" alt="" style="width: 35px; height: 35px;"></a><p>Check Out</p></div>
+    </div>
+
+
+<!-- menu and help section -->
+    <div class="secnav">
+        <div class="shop">
+            <i class="fa fa-bars" onclick="showSideBar()"><span> Shop By Department</span></i>
+            <ul class="mainmenu" type="none">
+                <li><a href="#">Shop My Store</a></li>
+                <li><a href="#">Holiday Deals</a></li>
+                <li><a href="#">Holiday Gift Shop</a></li>
+                <li><a href="#">From the home</a></li>
+                <li><a href="womenProduct.html">Women</a></li>
+                <li><a href="womenProduct.html">Women's Plus Size</a></li>
+                <li><a href="#">Juniors</a></li>
+                <li><a href="products.html">Men</a></li>
+                <li><a href="products.html">Men's Big & Tall</a></li>
+                <li><a href="#">Shoe</a></li>
+                <li><a href="#">Toys</a></li>
+                <li><a href="kid.html">Kids</a></li>
+                <li><a href="#">Baby</a></li>
+                <li><a href="#">Bed & Bath</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Jewelry & Accessories</a></li>
+                <li><a href="#">Beauty | SHEFORA</a></li>
+                <li><a href="#">Active & Fitness</a></li>
+            </ul>
+        </div>
+        <div class="selectstore">
+            <i class="fas fa-star"></i><span class="fas">My Store : Select Store</span>
+        </div>
+        <div class="coupon"><i class="fas fa-dollar-sign"></i><span style="font-size: 17px; font-weight:bold;">Kohl’s Coupons</span></div>
+        <div class="help"><i class="far fa-question-circle"></i><span style="font-size: 17px;font-weight:bold;">Help</span></div>
+    </div>
+
+    <div class="container">
+        <h2>Sign in</h2>
+        <p class="font">Sign in to your Kohls.com account to shop,
+            check out or track your order.</p>
+            <form id="myform" action="">
+                <h3>Email Address</h3>
+                <input id="email" class="text" type="text" style="width: 225px; height: 30px; margin-top: 2px; border: 1px solid gray;"/>
+                <h3>Password</h3>
+                <input id="pass" class="text" type="password"/><br><br>
+                <div id="box">
+                    <input id="check" type="checkbox"><h3 id="keep">Keep me signed in</h3>
+                    <a href=""><p id="keep">Forgot password?</p></a>
+                </div>
+                <p>Check this box to stay signed in on this device. Recommended for devices that only you use.</p>
+                <input id="submit" class="button" type="submit" value="Sign in"><br><br>
+                <div id="vl"></div>
+                <div id="box">
+                    <div>
+                <img  id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI4OKtWY5cfM0iCy5qD6RvaQ_ikkkGY2586A&usqp=CAU" alt="" width="50px" height="40px">
+            </div>
+            <div >
+                <h3 class="tx">Looking for your Kohl's Card Account?</h3>
+                <a  href=""><p>Sign In to your Kohl's Card Account</p><a href="kohlscart.html">Apply for a Kohl's Card.</a></a>
+            </div>
+            </div>    
+            </form>
+            <div class="right">
+                <div class="container2">
+                <h3>Create Account</h3>
+                <p class="font">With a Kohls.com account, enjoy exclusive,
+                    benefits that make shopping faster and easier!</p>
+                    <div id="rt">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h5>Enjoy Express Checkout</h5>
+                </div>
+                <div id="rt">
+                    <i class="fas fa-gifts"></i>
+                    <h5>See your Kohl's Rewards</h5>
+                </div>
+                <div id="rt">
+                    <i class="fas fa-money-bill"></i>
+                    <h5>Print Kohl's Cash</h5>
+                </div>
+                <div id="rt">
+                    <i class="fas fa-truck-moving"></i>
+                    <h5>Track orders easily</h5>
+                </div>
+               
+                <a href="createaccount.html"> <button class="button">CREATE ACCOUNT</button></a>
+
+                </div>
+            </div>
+    </div>
+
+    <div class="footermain">
+        <div class="footertop">
+  
+         <div class="subbox1">
+           <div>
+           <p id="footertxt"><b>CONNECT WITH US</b></p>
+           </div>
+           <div>
+           <p id="footertxt"><a href="https://www.facebook.com/kohls"><i class="fab fa-facebook-f fa-2x"></i></a></p>  
+           </div>
+           <div>
+             <p id="footertxt"><a href="https://twitter.com/kohls"><i class="fab fa-twitter fa-2x"></i></a></p>
+           </div>
+           <div>
+             <p id="footertxt"><a href="https://www.pinterest.com/kohls/"><i class="fab fa-pinterest-p fa-2x"></i></a></p>
+           </div>
+           <div>
+             <p id="footertxt"><a href="https://www.instagram.com/kohls"><i class="fab fa-instagram fa-2x"></i></a></p>
+           </div>
+           <div>
+             <p id="footertxt"><a href=""><i class="fab fa-youtube fa-2x"></i></a></p>
+           </div>
+         </div>
+   
+   
+         <div class="subbox2">
+           <div id="get">
+           <p id="footertxt"><b>GET OUR APP</b></p>
+           </div>
+            <div id="bar">
+             <img src="https://tse4.mm.bing.net/th?id=OIP.ZdIR9G0iFvIqrc1wLXDG4AHaHa&pid=Api&P=0&w=300&h=300" height="100px"/>
+            </div>
+            <div id="learn">
+           <p id="footertxt"><b>Scan the code to download
+             the Kohl’s App today.</b></p>
+            <a href="https://www.kohls.com/feature/app.jsp"><button id="infosi">Learn More</button></a> 
+            </div>
+         </div>
+         
+       </div>
+   
+         <div id="footerbottom">
+         <div>
+         <p id="footertxt"><b>CUSTOMER SERVICE</b></p>
+         <p id="footertxt">Contact Us</p>
+         <p id="footertxt">Shipping</p>
+         <p id="footertxt">Returns</p>
+         <p id="footertxt">Rebates</p>
+         <p id="footertxt">Recalls</p>
+         <p id="footertxt">Product Guides</p>
+         <p id="footertxt"> Kohl’s Cash</p>
+         </div>
+         <div>
+           <p id="footertxt"><b>SHOP KOHL’S</b></p>
+           <p id="footertxt">Get 15% off when you
+             sign up for our emails</p>
+           <p id="footertxt">My Lists</p>
+           <p id="footertxt">Site Map</p>
+           <p id="footertxt">Store Locator</p>
+           <p id="footertxt">Gift Cards</p>
+           <p id="footertxt">Kohl’s Coupons</p>
+           
+         </div>
+         <div>
+           <p id="footertxt"><b>MY ACCOUNT</b></p>
+           <p id="footertxt">Sign In</p>
+           <p id="footertxt">My Account</p>
+           <p id="footertxt">Update Password</p>
+           <p id="footertxt">Order Status</p>
+           <p id="footertxt">Rewards</p>
+           <p id="footertxt">Gift Card Balance &
+             Kohl’s Cash Balance</p>
+          
+         </div>
+         <div>
+           <p id="footertxt"><b>KOHL’S CARD</b></p>
+           <p id="footertxt">Benefits</p>
+           <p id="footertxt">Pay & Manage Card</p>
+           <p id="footertxt">Apply for a Kohl’s Card</p>
+           <p id="footertxt">See if you prequalify</p>
+           
+         </div>
+         <div>
+           <p id="footertxt"><b>ABOUT KOHL’S</b></p>
+           <p id="footertxt">Our Websites</p>
+           <p id="footertxt">Community</p>
+           <p id="footertxt">Diversity & Inclusion</p>
+           <p id="footertxt">Sustainability</p>
+           <p id="footertxt">Careers</p>
+           <p id="footertxt">Apply for Seasonal Jobs</p>
+           <p id="footertxt">Associate Services</p>
+           <p id="footertxt">Investor Relations</p>
+           <p id="footertxt">Affiliate Program</p>
+           <p id="footertxt">Advertise with Us</p>
+         </div>
+         </div>  
+         </div>
+         <div class="foot">
+         <p id="footertxt">© 2021 Kohl’s, Inc.<br>
+           KOHL’S® and Kohl’s brand names are trademarks owned by KIN, Inc.<br>
+           All rights reserved.</p>
+         <p id="footertxt">Android, Google Play and the Google Play logo are trademarks of Google Inc. App Store is a service mark of Apple Inc.<br>
+         <u><b>Legal Notices, Privacy Policy, California Privacy Policy, CA-Do Not Sell My Personal Information, About Our Ads, California Transparency in Supply Chains Act.</u></b></p>
+         </div>
+
+</body>
+</html>
+<script>
+    document.querySelector("#myform").addEventListener("submit", Login)
+        var sigin = JSON.parse(localStorage.getItem("shoppingitem"))
+        // var user = []
+        function Login(){
+            var email = document.querySelector("#email").value;
+            var pass = document.querySelector("#pass").value;
+            var userred = {
+                email: email,
+                pass: pass
+            }
+            var count = 0
+            // user.push(userred)
+            // localStorage.setItem("userdata",JSON.stringify(user))
+            if(email == "admin" && pass =="admin"){
+                window.location.href = "projectAdmin.html"
+                count++
+            }
+             else {
+                 for(var i = 0; i<sigin.length; i++){
+            if(sigin[i].email == email && sigin[i].pass == pass){
+                    count++
+                    window.location.href = "home.html"
+                }
+                
+            }
+        }
+            if(count != 0){
+                // window.location.href = "product.html"
+                alert("login Succesful")
+            }
+            else{
+                alert("invalid email or passward")
+            }
+
+        }
+</script>
+
+<script src="sidebar.js"></script>

@@ -1,0 +1,367 @@
+#container{
+    width: 600px;
+   
+    margin-top: 40px;
+    margin-left: 400px;
+}
+.name1{
+    width: 250px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+.name1:hover{
+    border: 1px solid blue;
+}
+.n1{
+    display: flex;
+    margin-top: 30px;
+    
+    
+}
+.n2{
+
+    margin-left: 30px;
+}
+.font{
+    font-size: 20px;
+    font-family: 'Gotham 5r';
+    font-weight: normal;
+    color: #000;
+   
+}
+#button{
+    cursor: pointer;
+    background-color: #95c96f;
+    color: white;
+    width: 200px;
+    height: 50px;
+    
+}
+.crcl{
+    cursor: pointer;
+   
+}
+#cancel{
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+
+#cancel:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#a{
+   width: 80px;
+   height: 80px;
+   border-radius: 40px;
+   box-shadow: 5px 2px #888888;
+}
+#head{
+   
+    -size: 15px;
+}
+.kohl{
+   color: 
+#208033;
+}
+#signstore{
+   display: none;
+}
+#enroll{
+   display: none;
+}
+#xyz{
+   display: flex;
+}
+div>p{
+  margin-top: 5px;
+}
+#abc{
+  display: flex;
+}
+.signin{
+  margin-left: 80px;
+  font-size: 20px;
+  color: black;
+}
+.footermain{
+    width:70%;
+    height: 700px;
+    margin-top: 100px;
+    margin-left: 300px;
+
+    /* margin:auto */
+}
+.footertop{
+    width:100%;
+    height: 15%;
+    margin-bottom: 20px;
+    display: flex;
+}
+#footerbottom{
+width: 100%;;
+height:80%;
+border-top:gray 1px solid ;
+display: flex;
+border-bottom: gray 1px solid;
+}
+#bottom>div{
+    width:20%;
+    height: 100%;
+
+
+}
+#footertxt{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   font-weight: 400;
+   margin-top:30px ;
+   padding-right:20px ;
+}
+.top>div{
+    width: 50%;
+    height: 100%;
+
+}
+.subbox1>div{
+   width:16%;
+   height: 100%;
+
+}
+.subbox1{
+    display: flex;
+}
+.subbox2{
+    display: flex;
+
+}
+#get{
+    width:16%;
+    height: 100%;
+    border-left: gray 1px solid;
+    padding-left: 20px;
+}
+#bar{
+    width: 25%;
+    height: 100%;
+
+    padding-left: 10px;
+}
+#learn{
+    width: 40% ;
+    height: 100%;
+
+}
+#infosi{
+    background-color: black;
+    color: white;
+    width: 100px;
+    border-radius: 3px;
+    border: transparent;
+    height: 25px;
+    font-family:Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}
+.foot{
+    width: 70%;
+    height: 130px;
+    margin: auto;
+    text-align: center;
+}
+.fab{
+    color: black;
+    margin-left: 30px;
+}
+.nav{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    background-color: white;
+}
+
+.brand{
+    font-family: helvetica, arial, sans-serif;
+    margin: 10px 25px;
+    height: 40px;
+    width: 150px;
+}
+.search{
+    width: 490px;
+    height: 40px;
+    margin: 10px 30px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+input[type = text] {
+    padding: 1px;
+    font-size: 20px;
+    border: none;
+    width: 430px;
+    height: 35px;
+}
+button{
+    width: 50px;
+    height: 35px;
+    border: none;
+    background-color: white;
+}
+.account{
+    float: left;
+    margin: auto;
+    margin-right: 50px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+#dropdown{
+    display: none;
+    width: 300px;
+    height: 350px;
+    background-color: rgb(238,238,238);
+    position: absolute;
+}
+.dropdownone{
+    display: flex;
+}
+.dropdownone > button{
+    width: 100px;
+    background-color: black;
+    color: white;
+    margin: 20px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.dropdownone > a{
+    font-size: 16px;
+    font-family:"Gotham 5r", Helvetica, Arial, sans-serif;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.dropdowntwo{
+    width: 270px;
+    height: 50px;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-family:"Gotham 5r", Helvetica, Arial, sans-serif ;
+    display: flex;
+}
+.dropdowntwo > .fas,span,a{
+    font-size: 16px;
+    margin: 5px 5px;
+}
+.dropdowntwo > h3{
+    margin-top: 15px;
+    font-weight: normal;
+}
+.dropdowntwo > .fa-wallet{
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.color{
+    background-color: rgb(220,238,240);
+}
+.cart{
+    float: left;
+    margin-top: 5px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+}
+.checkout{
+    float: left;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+p{
+    margin: 0px 0px ;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Gotham 5r", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+img{
+    margin-left: 10px;
+}
+
+/* menu & help section */
+.secnav{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid gray;
+    display: flex;
+}
+.shop{
+    border-right:1px solid gray;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+}
+.fa{
+    margin-left: 33px;
+    margin-top: 10px;
+}
+.fa > span{
+    font-weight: bold;
+    font-family: "Gotham 5r", Helvetica, Arial, sans-serif;
+}
+.mainmenu{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 200px;
+    display: none;
+    background-color: white;
+    position: relative;
+}
+.mainmenu li a{
+   font-family:"Gotham 5r", Helvetica, Arial, sans-serif;
+   display: block;
+   text-decoration: none;
+   font-size: 16px;
+   padding: 10px 0px;
+   font-weight:600; 
+   position: relative;
+   background-color: white
+}
+
+.selectstore{
+    height: 100%;
+    width: 230px;
+    font-size: 18px;
+}
+.selectstore > .fas{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.selectstore > span{
+    font-family: "Gotham 5r", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.coupon{
+    float: right;
+    margin: auto;
+    margin-right: 50px;
+}
+.coupon > span{
+    font-family: "Gotham 5r", Helvetica, Arial, sans-serif;
+}
+.coupon > .fas{
+    margin-right: 10px;
+}
+.help{
+    float: right;
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-left: 0px;
+}
+.help > span{
+    font-family: "Gotham 5r", Helvetica, Arial, sans-serif;
+}
+.help > .far{
+    margin-right: 10px;
+}
